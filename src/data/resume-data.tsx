@@ -14,13 +14,13 @@ export const RESUME_DATA = {
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
   about:
-    "Detail-oriented Full Stack Engineer dedicated to building high-quality products.",
+    "All round IT Expert across different industries",
   summary: (
     <>
-      Frontend-focused Full Stack Engineer specializing in high-performance
-      React applications, scalable Node.js services, and real-time collaboration
-      systems. Experienced in technical architecture design and remote team
-      leadership.
+    A Skillful IT Technical Expert in Enterprise, both on system and infrastructure design, 
+    with excellent project management skills, good leadership and communications skills. 
+    Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. 
+    High passion to override challenges.
     </>
   ),
   avatarUrl: "https://media.licdn.com/dms/image/v2/C5603AQFl2pXoOw916A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517449552525?e=1741219200&v=beta&t=ow7mYohzesI947rgtBpToa5dBZ8LzLV86FwUh5ej0KE",
@@ -48,44 +48,47 @@ export const RESUME_DATA = {
   },
   education: [
     {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
+      school: "City University of Hong Kong",
+      degree: "Msc Business Information System",
+      start: "2008",
       end: "2010",
+    },
+    {
+      school: "Victoria University",
+      degree: "Bachelor of Business Management",
+      start: "2006",
+      end: "2018",
     },
   ],
   work: [
     {
-      company: "Film.io",
-      link: "https://film.io",
+      company: "HSBC",
+      link: "https://www.hsbc.com.hk",
       badges: ["Remote", "React", "Next.js", "TypeScript", "Node.js"],
-      title: "Software Architect",
+      title: "Solution Architect",
       logo: ConsultlyLogo,
-      start: "2024",
+      start: "2019",
       end: null,
       description: (
         <>
-          Leading technical architecture of a blockchain-based film funding
-          platform.
+          End to end Architect for WholeSale Digital channel
           <ul className="list-inside list-disc">
             <li>
-              Architecting migration from CRA to Next.js for improved
-              performance, SEO, and DX
+              Leading different work stream
             </li>
             <li>
-              Established release process enabling faster deployments and
-              reliable rollbacks
+              Accountable for defining solution design, in alignment with global technology strategy and roadmap, and articulating associated architectural risks, issues and technical debt
             </li>
             <li>
-              Implementing system-wide monitoring and security improvements
+              Provide consistent end to end solution designs which will deliver expected Business Outcomes, satisfy all relevant regulatory requirements and mitigate identified operational risks
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Parabol",
-      link: "https://parabol.co",
+      company: "Shangri-La Hotels and Resorts",
+      link: "https://www.shangri-la.com",
       badges: [
         "Remote",
         "React",
@@ -94,91 +97,98 @@ export const RESUME_DATA = {
         "GraphQL",
         "Tailwind CSS",
       ],
-      title: "Senior Full Stack Developer",
+      title: "Solution Architect",
       logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
+      start: "2018",
+      end: "2019",
       description: (
         <>
-          Senior developer and squad leader for an enterprise agile meeting
-          platform.
+          Lead the Architect design for the group
           <ul className="list-inside list-disc">
             <li>
-              Built design system with Tailwind CSS, improving development speed
-              and time to market
-            </li>
-            <li>
-              Implemented engineering practices: PR automation, code review
-              guidelines, and workflows
-            </li>
-            <li>
-              Open source contributions to Relay DevTools and React i18n tooling
+              Performs hands-on solution architecture design work and actively participates in design and code reviews to ensure both delivery of desired business outcomes and alignment to enterprise standards
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
+      company: "AS Watson Industries",
+      link: "https://www.aswatson.com/brands/a-s-watson-industry/",
       badges: ["Remote", "React", "TypeScript", "Node.js", "Android", "Kotlin"],
-      title: "Lead Android Developer → Full Stack Developer",
+      title: "System Analyst",
       logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
+      start: "2017",
+      end: "2018",
       description: (
         <>
-          Successfully transitioned from mobile to full-stack development while
-          leading distributed teams.
+          Refine the design of the ERP and system architecture
           <ul className="list-inside list-disc">
             <li>
-              Led frontend team at Evercast, building real-time platform
-              supporting 30+ users per room with HD streaming and collaboration
-              tools
+              Redesign and restructuring the automation of company’s operational processes
             </li>
             <li>
-              Developed offline-first Android app for DKMS, improving donor
-              registration process
+              Lead cross functional departments during the project and line up resources to meet delivery schedules
             </li>
             <li>
-              Led development teams across multiple successful client projects
+              Review data analytics methodologies, design and implement the ways of information collection, transformation and star schema establishment
             </li>
           </ul>
         </>
       ),
     },
     {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
+      company: "NTT Com Asia",
+      link: "https://www.ntt.com.hk/",
       badges: ["On Site", "Android", "Java", "Kotlin"],
-      title: "Android Developer → Lead Android Developer",
+      title: "System Analyst",
       logo: JojoMobileLogo,
       start: "2012",
       end: "2015",
       description: (
         <>
-          First Android developer, grew and led a team of 15+ engineers while
-          establishing engineering culture.
+          Define the design of application and system architecture
           <ul className="list-inside list-disc">
             <li>
-              Developed apps for major Polish companies including LOT, Polskie
-              Radio, and Agora
+              Design and deliver the key strategic on enterprise cloud solution
             </li>
-            <li>Built and mentored high-performing mobile development team</li>
+            <li>System flow, logical design and coding review for the new and existing development.</li>
           </ul>
         </>
       ),
     },
     {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
+      company: "Trinity Management Limited (Li & Fung Group)",
+      link: "",
       badges: ["On Site", "C/C++", "LTE", "Agile"],
-      title: "C/C++ Developer",
+      title: "Analyst Programmer",
       logo: NSNLogo,
       start: "2010",
       end: "2012",
       description:
-        "Developed software for LTE base stations at enterprise scale, gaining strong fundamentals in software architecture, testing practices, and cross-team collaboration.",
+        "Design and enhance internal ERP, POS and CRM system",
+    },
+    {
+      company: "Winnitex Ltd",
+      link: "",
+      badges: ["On Site", "C/C++", "LTE", "Agile"],
+      title: "System Analyst",
+      logo: NSNLogo,
+      start: "2014",
+      end: "2009",
+      description:
+        "Design and enhance internal ERP and CRM system",
+    },
+    {
+      company: "Hunter Douglas Hong Kong",
+      link: "",
+      badges: ["On Site", "C/C++", "LTE", "Agile"],
+      title: "System Administrator",
+      logo: NSNLogo,
+      start: "2008",
+      end: "2009",
+      description:
+        "Server Development and In-house software development",
     },
   ],
   skills: [
@@ -196,18 +206,18 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
-      title: "Monito",
+      title: "GBA Lending Project",
       techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
       description:
         "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
       logo: MonitoLogo,
       link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
+        label: "GBA Lending Project",
+        href: "http://www.aastocks.com/tc/stocks/news/aafn-con/IC4375684/latest-news/INFOCAST",
       },
     },
     {
-      title: "Consultly",
+      title: "IADS",
       techStack: [
         "TypeScript",
         "Next.js",
@@ -222,20 +232,31 @@ export const RESUME_DATA = {
         "Platform for online consultations with real-time video meetings and scheduling",
       logo: ConsultlyLogo,
       link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
+        label: "IADS",
+        href: "https://inews.hket.com/article/3713489",
       },
     },
     {
-      title: "Minimalist CV",
+      title: "Remote Cheque Deposit",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "An open source minimalist, print friendly CV template with a focus on readability and clean design. >9k stars on GitHub",
+        "Remote Cheque Deposit enables SMEs to deposit cheques via HSBC HK Business Express Mobile App whenever and wherever needed.",
       logo: MonitoLogo,
       link: {
-        label: "Minimalist CV",
-        href: "https://github.com/BartoszJarocki/cv",
+        label: "Remote Cheque Deposit",
+        href: "https://www.linkedin.com/feed/update/urn:li:activity:6911948399172870144/",
       },
     },
+    {
+      title: "Remote Account Opening",
+      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
+      description:
+        "The remote account opening system will allow small businesses to open an account without face-to-face meetings at a branch or submitting physical documents or signatures. SMEs will be able to obtain a bank account number immediately and verify their identity using the bank’s mobile app.",
+      logo: MonitoLogo,
+      link: {
+        label: "Remote Account Opening",
+        href: "https://www.scmp.com/business/banking-finance/article/3090026/hsbc-debuts-digital-account-sign-process-small-business",
+      },
+    },    
   ],
 } as const;
