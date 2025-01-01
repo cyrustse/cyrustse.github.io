@@ -14,16 +14,15 @@ export const RESUME_DATA = {
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
   about:
-    "All round IT Expert across different industries",
+    "A Skillful IT Technical Expert in Enterprise, both on system and infrastructure design, with excellent project management skills, good leadership and communications skills. Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. High passion to override challenges.",
   summary: (
     <>
-    A Skillful IT Technical Expert in Enterprise, both on system and infrastructure design, 
-    with excellent project management skills, good leadership and communications skills. 
-    Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. 
-    High passion to override challenges.
+      Over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
+      Demonstrated expertise in Enterprise Application Integration, Real-Time Analytics, Business Process Management,Technical Design and Development
+      Successfully executed large-scale IT projects, including multi-hybrid-cloud implementation, digital transformation, IT architecture and development
     </>
   ),
-  avatarUrl: "https://media.licdn.com/dms/image/v2/C5603AQFl2pXoOw916A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517449552525?e=1741219200&v=beta&t=ow7mYohzesI947rgtBpToa5dBZ8LzLV86FwUh5ej0KE",
+  avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQEOQn91gIeeVA/profile-displayphoto-shrink_800_800/B56ZQiF7bTH0Ac-/0/1735738767475?e=1741219200&v=beta&t=_x_ukW9m_Et0cgpNB6ogwV-IUJGMAHzR3y34SFle4v4",
   personalWebsiteUrl: "https://cyrustse.github.io",
   contact: {
     email: "tsechunhong@gmail.com",
@@ -64,7 +63,7 @@ export const RESUME_DATA = {
     {
       company: "HSBC",
       link: "https://www.hsbc.com.hk",
-      badges: ["React", "Next.js", "TypeScript", "Node.js"],
+      badges: ["React", "Next.js", "APIs", "Java"],
       title: "Solution Architect",
       logo: ConsultlyLogo,
       start: "2019",
@@ -87,15 +86,13 @@ export const RESUME_DATA = {
       ),
     },
     {
-      company: "Shangri-La Hotels and Resorts",
+      company: "Shangri-La (SLIM)",
       link: "https://www.shangri-la.com",
       badges: [
-        "Remote",
         "React",
         "TypeScript",
         "Node.js",
         "GraphQL",
-        "Tailwind CSS",
       ],
       title: "Solution Architect",
       logo: ParabolLogo,
@@ -115,7 +112,7 @@ export const RESUME_DATA = {
     {
       company: "AS Watson",
       link: "https://www.aswatson.com/brands/a-s-watson-industry/",
-      badges: ["React", "TypeScript", "Node.js", "Android", "Kotlin"],
+      badges: ["Java", "Python", "AS400"],
       title: "System Analyst",
       logo: ClevertechLogo,
       start: "2017",
@@ -192,17 +189,21 @@ export const RESUME_DATA = {
     },
   ],
   skills: [
-    "React/Next.js/Remix",
-    "TypeScript",
-    "Tailwind CSS",
-    "Design Systems",
-    "WebRTC",
-    "WebSockets",
-    "Node.js",
-    "GraphQL",
-    "Relay",
+    "Angular/React/Next.js",
+    "JavaScript/TypeScript",
+    "Swift",
+    "C#",
+    "ASP/ASP.net",
+    "SQL",
+    "Java",
+    "SpringBoot/SpringSecurity",
+    "RUST",
+    "Python",
+    "Postgres",
+    "Redis/Hazelcast",
+    "Security Architecture Design",
     "System Architecture",
-    "Remote Team Leadership",
+    "Application Architecture",
   ],
   projects: [
     {
