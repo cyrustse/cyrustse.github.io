@@ -14,12 +14,10 @@ export const RESUME_DATA = {
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
   about:
-    "A Skillful IT Technical Expert in Enterprise, both on system and infrastructure design, with excellent project management skills, good leadership and communications skills. Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. High passion to override challenges.",
+    "A Skillful IT Architect who has over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
   summary: (
     <>
-      Over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
-      Demonstrated expertise in Enterprise Application Integration, Real-Time Analytics, Business Process Management,Technical Design and Development
-      Successfully executed large-scale IT projects, including multi-hybrid-cloud implementation, digital transformation, IT architecture and development
+      Good leadership and communications skills. Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. High passion to override challenges.
     </>
   ),
   avatarUrl: "https://media.licdn.com/dms/image/v2/D5603AQEOQn91gIeeVA/profile-displayphoto-shrink_800_800/B56ZQiF7bTH0Ac-/0/1735738767475?e=1741219200&v=beta&t=_x_ukW9m_Et0cgpNB6ogwV-IUJGMAHzR3y34SFle4v4",
