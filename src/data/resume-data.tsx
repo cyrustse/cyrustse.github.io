@@ -14,9 +14,10 @@ export const RESUME_DATA = {
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
   about:
-    "A Skillful IT Architect who has over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
+    "All round IT guy"
   summary: (
     <>
+      A Skillful IT Architect who has over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
       Good leadership and communications skills. Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. High passion to override challenges.
     </>
   ),
