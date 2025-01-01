@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
   about:
-    "All round IT guy",
+    "All round IT Expert across different industries",
   summary: (
     <>
       A Skillful IT Architect who has over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
