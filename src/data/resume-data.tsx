@@ -72,7 +72,13 @@ export const RESUME_DATA = {
           End to end Architect for WholeSale Digital channel
           <ul className="list-inside list-disc">
             <li>
-              Creating solution designs for products and features which support the execution of the technology strategy and roadmap, align to standards and policies and meet the business needs
+              Leading different work stream
+            </li>
+            <li>
+              Accountable for defining solution design, in alignment with global technology strategy and roadmap, and articulating associated architectural risks, issues and technical debt
+            </li>
+            <li>
+              Provide consistent end to end solution designs which will deliver expected Business Outcomes, satisfy all relevant regulatory requirements and mitigate identified operational risks
             </li>
           </ul>
         </>
@@ -96,7 +102,7 @@ export const RESUME_DATA = {
           Lead the Architect design for the group
           <ul className="list-inside list-disc">
             <li>
-              Provides input and functional direction to the Technology Platforms, API strategy and implementation roadmap
+              Performs hands-on solution architecture design work and actively participates in design and code reviews to ensure both delivery of desired business outcomes and alignment to enterprise standards
             </li>
           </ul>
         </>
@@ -148,7 +154,7 @@ export const RESUME_DATA = {
       ),
     },
     {
-      company: "Li & Fung Trinity Limited",
+      company: "Trinity Limited (Li & Fung Group)",
       link: "",
       badges: ["C#", ".Net", "MSSQL", "Agile"],
       title: "Analyst Programmer",
@@ -203,7 +209,7 @@ export const RESUME_DATA = {
       title: "GBA Lending Project",
       techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
       description:
-        "Design & Develop a new Lending application for NTB customer to submit lending application & drawdown request",
+        "Browser extension for debugging web applications. Includes taking screenshots, screen recording, E2E tests generation and generating bug reports",
       logo: MonitoLogo,
       link: {
         label: "GBA Lending Project",
@@ -215,11 +221,15 @@ export const RESUME_DATA = {
       techStack: [
         "TypeScript",
         "Next.js",
+        "Vite",
+        "GraphQL",
+        "WebRTC",
+        "Tailwind CSS",
         "PostgreSQL",
         "Redis",
       ],
       description:
-        "Design & Develop an open banking solution on Cloud to support both HSBC & HASE's CMB and WPB",
+        "Platform for online consultations with real-time video meetings and scheduling",
       logo: ConsultlyLogo,
       link: {
         label: "IADS",
@@ -247,6 +257,6 @@ export const RESUME_DATA = {
         label: "Remote Account Opening",
         href: "https://www.scmp.com/business/banking-finance/article/3090026/hsbc-debuts-digital-account-sign-process-small-business",
       },
-    }, 
+    },    
   ],
 } as const;
