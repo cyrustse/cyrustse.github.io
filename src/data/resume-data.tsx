@@ -160,8 +160,8 @@ export const RESUME_DATA = {
       badges: ["Android", "Java", "Kotlin"],
       title: "System Analyst",
       logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      start: "2015",
+      end: "2016",
       description: (
         <>
           Define the design of application and system architecture
@@ -180,8 +180,8 @@ export const RESUME_DATA = {
       badges: ["C#", ".Net", "MSSQL", "Agile"],
       title: "Analyst Programmer",
       logo: NSNLogo,
-      start: "2010",
-      end: "2012",
+      start: "2014",
+      end: "2015",
       description:
         "Design and enhance internal ERP, POS and CRM system",
     },
