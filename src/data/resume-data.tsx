@@ -170,8 +170,8 @@ export const RESUME_DATA = {
       badges: ["C#", "ASP", "Agile"],
       title: "System Analyst",
       logo: NSNLogo,
-      start: "2014",
-      end: "2009",
+      start: "2009",
+      end: "2014",
       description:
         "Design and enhance internal ERP and CRM system",
     },
