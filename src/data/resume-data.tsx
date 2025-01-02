@@ -114,9 +114,6 @@ export const RESUME_DATA = {
               Provides input and functional direction to the Technology Platforms, API strategy and implementation roadmap
             </li>
             <li>
-              Redesign and restructuring the automation of company's operational processes
-            </li>
-            <li>
               Identifies technical solutions and business process improvements in support of the business and IT strategic direction
             </li>
             <li>
@@ -249,7 +246,7 @@ export const RESUME_DATA = {
         "Redis",
       ],
       description:
-        "Design & Develop an open banking solution on Cloud to support both HSBC & HASE's CMB and WPB",
+        "Design & Develop an open banking solution on Cloud to support both HSBC & HASE’s CMB and WPB",
       logo: ConsultlyLogo,
       link: {
         label: "IADS",
