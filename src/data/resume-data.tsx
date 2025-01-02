@@ -142,7 +142,7 @@ export const RESUME_DATA = {
           Refine the design of the ERP and system architecture
           <ul className="list-inside list-disc">
             <li>
-              Redesign and restructuring the automation of company’s operational processes
+              Redesign and restructuring the automation of company&apos;s operational processes
             </li>
             <li>
               Lead cross functional departments during the project and line up resources to meet delivery schedules
@@ -246,7 +246,7 @@ export const RESUME_DATA = {
         "Redis",
       ],
       description:
-        "Design & Develop an open banking solution on Cloud to support both HSBC & HASE’s CMB and WPB",
+        "Design & Develop an open banking solution on Cloud to support both HSBC & HASE&apos;s CMB and WPB",
       logo: ConsultlyLogo,
       link: {
         label: "IADS",
