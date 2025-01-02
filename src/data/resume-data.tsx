@@ -248,49 +248,5 @@ export const RESUME_DATA = {
         href: "https://www.scmp.com/business/banking-finance/article/3090026/hsbc-debuts-digital-account-sign-process-small-business",
       },
     }, 
-    {
-      title: "Tranaction Data signing design",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "Enable the capability for secure mobile payment using MSK",
-      logo: MonitoLogo,
-      link: {
-        label: "Tranaction Data signing design",
-        href: "",
-      },
-    },
-    {
-      title: "Digital Business Banking Replatforming",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "Replatform the existing banking system and transforming from monolith to microservices",
-      logo: MonitoLogo,
-      link: {
-        label: "Digital Business Banking Replatforming",
-        href: "",
-      }, 
-    },       
-    {
-      title: "Digital Authorization Service",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "Design & Develop a system that allows both banking and non banking customers to perform an authorization and signing request.",
-      logo: MonitoLogo,
-      link: {
-        label: "DAS",
-        href: "",
-      }, 
-    },        
-    {
-      title: "Investment products solution",
-      techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "Channel Investment product solution design for such as HK, US Stock trading and Bond & CD products",
-      logo: MonitoLogo,
-      link: {
-        label: "Investment products solution",
-        href: "",
-      }, 
-    },      
   ],
 } as const;
