@@ -71,23 +71,23 @@ export const RESUME_DATA = {
         <>
           End to end Architect for WholeSale Digital channel
           <ul className="list-inside list-disc">
-          <li>
-              Creating solution designs for products and features which support the execution of the technology strategy and roadmap, align to standards and policies and meet the business needs.
+            <li>
+              Creating solution designs for products and features which support the execution of the technology strategy and roadmap, align to standards and policies and meet the business needs
             </li>
             <li>
-              Ensuring solution designs are cost effective and maintained through the agile development lifecycle, resolving design reated issues in a timely manner.
+              Ensuring solution designs are cost effective and maintained through the agile development lifecycle, resolving design reated issues in a timely manner
             </li>
             <li>
-              Providing leadership in the pod to steer the execution of the defined solution design.
+              Providing leadership in the pod to steer the execution of the defined solution design
             </li>
             <li>
-              Collaborating with the Platform and Portfolio Architects to evolve the architectural strategy and roadmap.
+              Collaborating with the Platform and Portfolio Architects to evolve the architectural strategy and roadmap
             </li>
             <li>
-              Ensuring architectural deliverables in governance and control frameworks are completed.
+              Ensuring architectural deliverables in governance and control frameworks are completed
             </li>
             <li>
-              Defining cloud roadmap for channel business and ensuring footprint is aligned with global and corporate standards.
+              Defining cloud roadmap for channel business and ensuring footprint is aligned with global and corporate standards
             </li>
           </ul>
         </>
@@ -111,22 +111,22 @@ export const RESUME_DATA = {
           Lead the Architect design for the group
           <ul className="list-inside list-disc">
             <li>
-              Provides input and functional direction to the Technology Platforms, API strategy and implementation roadmap.
+              Provides input and functional direction to the Technology Platforms, API strategy and implementation roadmap
             </li>
             <li>
-              Redesign and restructuring the automation of company's operational processes.
+              Redesign and restructuring the automation of company's operational processes
             </li>
             <li>
-              Identifies technical solutions and business process improvements in support of the business and IT strategic direction.
+              Identifies technical solutions and business process improvements in support of the business and IT strategic direction
             </li>
             <li>
-              Ensures the engineered environment meets the specification in terms of business requirements, application design and infrastructure requirements, i.e. accountable for the platform integration performance and efficiency.
+              Ensures the engineered environment meets the specification in terms of business requirements, application design and infrastructure requirements, i.e. accountable for the platform integration performance and efficiency
             </li>
             <li>
-              Performs hands-on solution architecture design work and actively participates in design and code reviews to ensure both delivery of desired business outcomes and alignment to enterprise standards.
+              Performs hands-on solution architecture design work and actively participates in design and code reviews to ensure both delivery of desired business outcomes and alignment to enterprise standards
             </li>
             <li>
-              Responsible for coaching and mentoring resources on solution architecture, providing advice, guidance and assistance to less experienced colleagues as required.
+              Responsible for coaching and mentoring resources on solution architecture, providing advice, guidance and assistance to less experienced colleagues as required
             </li>
           </ul>
         </>
@@ -318,7 +318,7 @@ export const RESUME_DATA = {
         "Channel Investment product solution design for such as HK, US Stock trading and Bond & CD products",
       logo: MonitoLogo,
       link: {
-        label: "I&I",
+        label: "Investment products solution",
         href: "",
       }, 
     },      
