@@ -70,9 +70,10 @@ export default function ResumePage() {
         aria-label="Resume Content"
       >
       <head>
-        <link rel="shortcut icon" href="favicon.ico"/>
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </head>
-      <Header />
+        <Header />
 
         <div className="space-y-8 print:space-y-4">
           <Summary summary={RESUME_DATA.summary} />
