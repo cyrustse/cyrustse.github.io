@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${RESUME_DATA.name} - Resume`,
     description: RESUME_DATA.about,
-    images: ["https://www.linkedin.com/in/cyrustse/"],
+    images: ["https://x.com/tsechunhong"],
   },
 };
 
@@ -69,7 +69,10 @@ export default function ResumePage() {
         className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
         aria-label="Resume Content"
       >
-        <Header />
+      <head>
+        <link rel="shortcut icon" href="favicon.ico"/>
+      </head>
+      <Header />
 
         <div className="space-y-8 print:space-y-4">
           <Summary summary={RESUME_DATA.summary} />
