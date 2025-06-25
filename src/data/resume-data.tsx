@@ -101,6 +101,7 @@ export const RESUME_DATA = {
         "TypeScript",
         "Node.js",
         "GraphQL",
+        ".NetCore",
       ],
       title: "Solution Architect",
       logo: ParabolLogo,
