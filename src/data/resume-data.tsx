@@ -13,12 +13,15 @@ export const RESUME_DATA = {
   initials: "CT",
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
-  about:
-    "All round IT Expert across different industries",
-  summary: (
+  about: "All round IT Expert across different industries",
+  summary: ({ years }: { years: number }) => (
     <>
-      A Skillful IT Architect who has over 17 years as an Architect and Technical Lead in Financial, Hotel, Manufacturing, Retail and Telecommunication.
-      Good leadership and communications skills. Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. High passion to override challenges.
+      A Skillful IT Architect who has over {years} years as an Architect and
+      Technical Lead in Financial, Hotel, Manufacturing, Retail and
+      Telecommunication. Good leadership and communications skills. Experienced
+      in working and communicating with foreigners. Demonstrate strong
+      analytical thinking and detail-oriented personality. High passion to
+      override challenges.
     </>
   ),
   avatarUrl: "/images/cv-pic.jpeg",
@@ -72,22 +75,30 @@ export const RESUME_DATA = {
           End to end Architect for WholeSale Digital channel
           <ul className="list-inside list-disc">
             <li>
-              Creating solution designs for products and features which support the execution of the technology strategy and roadmap, align to standards and policies and meet the business needs
+              Creating solution designs for products and features which support
+              the execution of the technology strategy and roadmap, align to
+              standards and policies and meet the business needs
             </li>
             <li>
-              Ensuring solution designs are cost effective and maintained through the agile development lifecycle, resolving design reated issues in a timely manner
+              Ensuring solution designs are cost effective and maintained
+              through the agile development lifecycle, resolving design reated
+              issues in a timely manner
             </li>
             <li>
-              Providing leadership in the pod to steer the execution of the defined solution design
+              Providing leadership in the pod to steer the execution of the
+              defined solution design
             </li>
             <li>
-              Collaborating with the Platform and Portfolio Architects to evolve the architectural strategy and roadmap
+              Collaborating with the Platform and Portfolio Architects to evolve
+              the architectural strategy and roadmap
             </li>
             <li>
-              Ensuring architectural deliverables in governance and control frameworks are completed
+              Ensuring architectural deliverables in governance and control
+              frameworks are completed
             </li>
             <li>
-              Defining cloud roadmap for channel business and ensuring footprint is aligned with global and corporate standards
+              Defining cloud roadmap for channel business and ensuring footprint
+              is aligned with global and corporate standards
             </li>
           </ul>
         </>
@@ -96,13 +107,7 @@ export const RESUME_DATA = {
     {
       company: "Shangri-La (SLIM)",
       link: "https://www.shangri-la.com",
-      badges: [
-        "React",
-        "TypeScript",
-        "Node.js",
-        "GraphQL",
-        ".NetCore",
-      ],
+      badges: ["React", "TypeScript", "Node.js", "GraphQL", ".NetCore"],
       title: "Solution Architect",
       logo: ParabolLogo,
       start: "2018",
@@ -112,19 +117,28 @@ export const RESUME_DATA = {
           Lead the Architect design for the group
           <ul className="list-inside list-disc">
             <li>
-              Provides input and functional direction to the Technology Platforms, API strategy and implementation roadmap
+              Provides input and functional direction to the Technology
+              Platforms, API strategy and implementation roadmap
             </li>
             <li>
-              Identifies technical solutions and business process improvements in support of the business and IT strategic direction
+              Identifies technical solutions and business process improvements
+              in support of the business and IT strategic direction
             </li>
             <li>
-              Ensures the engineered environment meets the specification in terms of business requirements, application design and infrastructure requirements, i.e. accountable for the platform integration performance and efficiency
+              Ensures the engineered environment meets the specification in
+              terms of business requirements, application design and
+              infrastructure requirements, i.e. accountable for the platform
+              integration performance and efficiency
             </li>
             <li>
-              Performs hands-on solution architecture design work and actively participates in design and code reviews to ensure both delivery of desired business outcomes and alignment to enterprise standards
+              Performs hands-on solution architecture design work and actively
+              participates in design and code reviews to ensure both delivery of
+              desired business outcomes and alignment to enterprise standards
             </li>
             <li>
-              Responsible for coaching and mentoring resources on solution architecture, providing advice, guidance and assistance to less experienced colleagues as required
+              Responsible for coaching and mentoring resources on solution
+              architecture, providing advice, guidance and assistance to less
+              experienced colleagues as required
             </li>
           </ul>
         </>
@@ -143,13 +157,17 @@ export const RESUME_DATA = {
           Refine the design of the ERP and system architecture
           <ul className="list-inside list-disc">
             <li>
-              Redesign and restructuring the automation of company&apos;s operational processes
+              Redesign and restructuring the automation of company&apos;s
+              operational processes
             </li>
             <li>
-              Lead cross functional departments during the project and line up resources to meet delivery schedules
+              Lead cross functional departments during the project and line up
+              resources to meet delivery schedules
             </li>
             <li>
-              Review data analytics methodologies, design and implement the ways of information collection, transformation and star schema establishment
+              Review data analytics methodologies, design and implement the ways
+              of information collection, transformation and star schema
+              establishment
             </li>
           </ul>
         </>
@@ -170,7 +188,10 @@ export const RESUME_DATA = {
             <li>
               Design and deliver the key strategic on enterprise cloud solution
             </li>
-            <li>System flow, logical design and coding review for the new and existing development.</li>
+            <li>
+              System flow, logical design and coding review for the new and
+              existing development.
+            </li>
           </ul>
         </>
       ),
@@ -183,8 +204,7 @@ export const RESUME_DATA = {
       logo: NSNLogo,
       start: "2014",
       end: "2015",
-      description:
-        "Design and enhance internal ERP, POS and CRM system",
+      description: "Design and enhance internal ERP, POS and CRM system",
     },
     {
       company: "Winnitex",
@@ -194,8 +214,7 @@ export const RESUME_DATA = {
       logo: NSNLogo,
       start: "2009",
       end: "2014",
-      description:
-        "Design and enhance internal ERP and CRM system",
+      description: "Design and enhance internal ERP and CRM system",
     },
     {
       company: "Hunter Douglas",
@@ -205,8 +224,7 @@ export const RESUME_DATA = {
       logo: NSNLogo,
       start: "2008",
       end: "2009",
-      description:
-        "Server Development and In-house software development",
+      description: "Server Development and In-house software development",
     },
   ],
   skills: [
@@ -240,12 +258,7 @@ export const RESUME_DATA = {
     },
     {
       title: "IADS",
-      techStack: [
-        "TypeScript",
-        "Next.js",
-        "PostgreSQL",
-        "Redis",
-      ],
+      techStack: ["TypeScript", "Next.js", "PostgreSQL", "Redis"],
       description:
         "Design & Develop an open banking solution on Cloud to support both HSBC & HASE&apos;s CMB and WPB",
       logo: ConsultlyLogo,
@@ -275,12 +288,11 @@ export const RESUME_DATA = {
         label: "Remote Account Opening",
         href: "https://www.scmp.com/business/banking-finance/article/3090026/hsbc-debuts-digital-account-sign-process-small-business",
       },
-    }, 
+    },
     {
       title: "Tranaction Data signing design",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description:
-        "Enable the capability for secure mobile payment using MSK",
+      description: "Enable the capability for secure mobile payment using MSK",
       logo: MonitoLogo,
       link: {
         label: "Tranaction Data signing design",
@@ -296,8 +308,8 @@ export const RESUME_DATA = {
       link: {
         label: "Digital Business Banking Replatforming",
         href: "",
-      }, 
-    },       
+      },
+    },
     {
       title: "Digital Authorization Service",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
@@ -307,8 +319,8 @@ export const RESUME_DATA = {
       link: {
         label: "DAS",
         href: "",
-      }, 
-    },        
+      },
+    },
     {
       title: "Investment products solution",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
@@ -318,7 +330,7 @@ export const RESUME_DATA = {
       link: {
         label: "Investment products solution",
         href: "",
-      }, 
-    },      
+      },
+    },
   ],
 } as const;
