@@ -69,10 +69,6 @@ export default function ResumePage() {
         className="mx-auto w-full max-w-2xl space-y-8 bg-white print:space-y-4"
         aria-label="Resume Content"
       >
-      <head>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </head>
         <Header />
 
         <div className="space-y-8 print:space-y-4">
