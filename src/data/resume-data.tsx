@@ -13,15 +13,15 @@ export const RESUME_DATA = {
   initials: "CT",
   location: "Hong Kong",
   locationLink: "https://www.google.com/maps/place/Hong+Kong",
-  about: "All round IT Expert across different industries",
+  about: "Enterprise Solution Architect & Digital Transformation Leader",
   summary: ({ years }: { years: number }) => (
     <>
-      A Skillful IT Architect who has over {years} years as an Architect and
-      Technical Lead in Financial, Hotel, Manufacturing, Retail and
-      Telecommunication. Good leadership and communications skills. Experienced
-      in working and communicating with foreigners. Demonstrate strong
-      analytical thinking and detail-oriented personality. High passion to
-      override challenges.
+      An enterprise-level Solution Architect and Technical Lead with over {years} years of 
+      experience spearheading digital transformation across Financial, Hospitality, Retail, 
+      Manufacturing, and Telecommunications sectors. Proven track record in designing scalable, 
+      secure, cloud-native microservices architectures. Exceptional cross-functional leader 
+      skilled in aligning regional technical roadmaps with global business strategies in 
+      multicultural environments.
     </>
   ),
   avatarUrl: "/images/cv-pic.jpeg",
@@ -75,30 +75,28 @@ export const RESUME_DATA = {
           End to end Architect for WholeSale Digital channel
           <ul className="list-inside list-disc">
             <li>
-              Creating solution designs for products and features which support
-              the execution of the technology strategy and roadmap, align to
-              standards and policies and meet the business needs
+              Architecting secure, scalable solution designs for core digital products and features, 
+              aligning long-term technology roadmaps with global banking standards.
             </li>
             <li>
-              Ensuring solution designs are cost effective and maintained
-              through the agile development lifecycle, resolving design reated
-              issues in a timely manner
+              Governing architectural integrity and cost-efficiency across the Agile development 
+              lifecycle, unblocking complex design bottlenecks dynamically.
             </li>
             <li>
-              Providing leadership in the pod to steer the execution of the
-              defined solution design
+              Providing technical leadership within engineering pods to steer high-fidelity execution 
+              of target state designs.
             </li>
             <li>
-              Collaborating with the Platform and Portfolio Architects to evolve
-              the architectural strategy and roadmap
+              Collaborating with Platform and Portfolio Architects to innovate enterprise architecture 
+              patterns and accelerate cloud adoption.
             </li>
             <li>
-              Ensuring architectural deliverables in governance and control
-              frameworks are completed
+              Ensuring all architectural deliverables strictly comply with rigorous risk, governance, 
+              and control frameworks.
             </li>
             <li>
-              Defining cloud roadmap for channel business and ensuring footprint
-              is aligned with global and corporate standards
+              Defining the regional cloud-native roadmap for digital channels, ensuring containerized 
+              footprints match global corporate compliance.
             </li>
           </ul>
         </>
@@ -114,31 +112,27 @@ export const RESUME_DATA = {
       end: "2019",
       description: (
         <>
-          Lead the Architect design for the group
+          Led enterprise architecture design for the global hospitality group
           <ul className="list-inside list-disc">
             <li>
-              Provides input and functional direction to the Technology
-              Platforms, API strategy and implementation roadmap
+              Defined and drove strategic functional direction for regional Technology Platforms, 
+              API strategies, and integration roadmaps.
             </li>
             <li>
-              Identifies technical solutions and business process improvements
-              in support of the business and IT strategic direction
+              Identified and engineered technical solutions and process optimizations to support 
+              high-growth global hospitality initiatives.
             </li>
             <li>
-              Ensures the engineered environment meets the specification in
-              terms of business requirements, application design and
-              infrastructure requirements, i.e. accountable for the platform
-              integration performance and efficiency
+              Owned ultimate accountability for platform integration performance, infrastructure 
+              efficiency, and system alignment with complex business requirements.
             </li>
             <li>
-              Performs hands-on solution architecture design work and actively
-              participates in design and code reviews to ensure both delivery of
-              desired business outcomes and alignment to enterprise standards
+              Delivered hands-on architecture blueprints and established rigorous code and design 
+              review frameworks to maintain exceptional engineering standards.
             </li>
             <li>
-              Responsible for coaching and mentoring resources on solution
-              architecture, providing advice, guidance and assistance to less
-              experienced colleagues as required
+              Coached and mentored cross-functional engineering teams, fostering a culture of 
+              architectural excellence.
             </li>
           </ul>
         </>
@@ -154,20 +148,19 @@ export const RESUME_DATA = {
       end: "2018",
       description: (
         <>
-          Refine the design of the ERP and system architecture
+          Optimized global ERP architecture and enterprise systems
           <ul className="list-inside list-disc">
             <li>
-              Redesign and restructuring the automation of company&apos;s
-              operational processes
+              Redesigned and re-engineered core automated workflows for global supply chain and 
+              operational processes to eliminate technical debt.
             </li>
             <li>
-              Lead cross functional departments during the project and line up
-              resources to meet delivery schedules
+              Steered cross-functional departments through complex project phases, optimizing resource 
+              allocation to hit aggressive market delivery schedules.
             </li>
             <li>
-              Review data analytics methodologies, design and implement the ways
-              of information collection, transformation and star schema
-              establishment
+              Overhauled data analytics methodologies, designing scalable ETL pipelines and high-performance 
+              star schema data models.
             </li>
           </ul>
         </>
@@ -176,21 +169,21 @@ export const RESUME_DATA = {
     {
       company: "NTT",
       link: "https://www.ntt.com.hk/",
-      badges: ["Android", "Java", "Kotlin"],
+      badges: ["VMware", "Java", "System Architecture"],
       title: "System Analyst",
       logo: JojoMobileLogo,
       start: "2015",
       end: "2016",
       description: (
         <>
-          Define the design of application and system architecture
+          Defined target application topologies and system architecture
           <ul className="list-inside list-disc">
             <li>
-              Design and deliver the key strategic on enterprise cloud solution
+              Designed and deployed business-critical architectures for enterprise cloud-native solutions.
             </li>
             <li>
-              System flow, logical design and coding review for the new and
-              existing development.
+              Directed end-to-end system flows, logical schemas, and exhaustive code audits for 
+              both greenfield and legacy product portfolios.
             </li>
           </ul>
         </>
@@ -204,7 +197,7 @@ export const RESUME_DATA = {
       logo: NSNLogo,
       start: "2014",
       end: "2015",
-      description: "Design and enhance internal ERP, POS and CRM system",
+      description: "Designed, integrated, and enhanced internal enterprise ERP, POS, and CRM architectures.",
     },
     {
       company: "Winnitex",
@@ -214,7 +207,7 @@ export const RESUME_DATA = {
       logo: NSNLogo,
       start: "2009",
       end: "2014",
-      description: "Design and enhance internal ERP and CRM system",
+      description: "Engineered and optimized large-scale internal manufacturing ERP and corporate CRM software ecosystem.",
     },
     {
       company: "Hunter Douglas",
@@ -224,7 +217,7 @@ export const RESUME_DATA = {
       logo: NSNLogo,
       start: "2008",
       end: "2009",
-      description: "Server Development and In-house software development",
+      description: "Managed complex server infrastructure deployment and drove in-house application engineering.",
     },
   ],
   skills: [
@@ -249,7 +242,7 @@ export const RESUME_DATA = {
       title: "GBA Lending Project",
       techStack: ["TypeScript", "Next.js", "Browser Extension", "PostgreSQL"],
       description:
-        "Design & Develop a new Lending application for NTB customer to submit lending application & drawdown request",
+        "Architected and delivered a cloud-native commercial lending engine for NTB clients, streamlining end-to-end digital lending applications and drawdown workflows.",
       logo: MonitoLogo,
       link: {
         label: "GBA Lending Project",
@@ -260,7 +253,7 @@ export const RESUME_DATA = {
       title: "IADS",
       techStack: ["TypeScript", "Next.js", "PostgreSQL", "Redis"],
       description:
-        "Design & Develop an open banking solution on Cloud to support both HSBC & HASE&apos;s CMB and WPB",
+        "Designed and engineered a high-availability Open Banking platform on Cloud, securely unifying commercial (CMB) and retail (WPB) banking APIs across HSBC and Hang Seng Bank.",
       logo: ConsultlyLogo,
       link: {
         label: "IADS",
@@ -271,7 +264,7 @@ export const RESUME_DATA = {
       title: "Remote Cheque Deposit",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "Remote Cheque Deposit enables SMEs to deposit cheques via HSBC HK Business Express Mobile App whenever and wherever needed.",
+        "Architected the secure remote cheque clearing infrastructure integrated into the HSBC HK Business Express Mobile App, driving cross-region digital check deposits for corporate SMEs.",
       logo: MonitoLogo,
       link: {
         label: "Remote Cheque Deposit",
@@ -282,7 +275,7 @@ export const RESUME_DATA = {
       title: "Remote Account Opening",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "The remote account opening system will allow small businesses to open an account without face-to-face meetings at a branch or submitting physical documents or signatures. SMEs will be able to obtain a bank account number immediately and verify their identity using the bank’s mobile app.",
+        "Spearheaded the secure, compliant architectural design for HSBC’s flagship instant digital SME onboarding platform, utilizing mobile identity verification (IDV) to remove physical branch friction.",
       logo: MonitoLogo,
       link: {
         label: "Remote Account Opening",
@@ -292,7 +285,7 @@ export const RESUME_DATA = {
     {
       title: "Tranaction Data signing design",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
-      description: "Enable the capability for secure mobile payment using MSK",
+      description: "Engineered robust Mobile Security Key (MSK) integration to support bulletproof transaction payload signing and high-value mobile payments.",
       logo: MonitoLogo,
       link: {
         label: "Tranaction Data signing design",
@@ -303,7 +296,7 @@ export const RESUME_DATA = {
       title: "Digital Business Banking Replatforming",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "Replatform the existing banking system and transforming from monolith to microservices",
+        "Orchestrated the strategic architectural overhaul of legacy monolithic banking architectures into distributed, resilient cloud-native microservices.",
       logo: MonitoLogo,
       link: {
         label: "Digital Business Banking Replatforming",
@@ -314,7 +307,7 @@ export const RESUME_DATA = {
       title: "Digital Authorization Service",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "Design & Develop a system that allows both banking and non banking customers to perform an authorization and signing request.",
+        "Designed and implemented an enterprise-grade corporate signing framework allowing unified, secure digital authorization access for banking and ecosystem partners.",
       logo: MonitoLogo,
       link: {
         label: "DAS",
@@ -325,7 +318,7 @@ export const RESUME_DATA = {
       title: "Investment products solution",
       techStack: ["TypeScript", "Next.js", "Tailwind CSS"],
       description:
-        "Channel Investment product solution design for such as HK, US Stock trading and Bond & CD products",
+        "Designed high-concurrency channel architectures for premier wealth management suites, covering equities (HK/US Stocks), bonds, and Certificate of Deposit (CD) systems.",
       logo: MonitoLogo,
       link: {
         label: "Investment products solution",
