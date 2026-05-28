@@ -7,7 +7,6 @@ import {
   ParabolLogo,
 } from "@/images/logos";
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
-import CVPic from "@/app/cv-pic.jpeg";
 
 export const RESUME_DATA = {
   name: "Cyrus Tse",
@@ -22,7 +21,7 @@ export const RESUME_DATA = {
       Good leadership and communications skills. Experienced in working and communicating with foreigners. Demonstrate strong analytical thinking and detail-oriented personality. High passion to override challenges.
     </>
   ),
-  avatarUrl: CVPic,
+  avatarUrl: "/images/cv-pic.jpeg",
   personalWebsiteUrl: "https://cyrustse.github.io",
   contact: {
     email: "tsechunhong@gmail.com",
