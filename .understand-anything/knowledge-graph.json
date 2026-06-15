@@ -1,0 +1,832 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "web-cv",
+    "languages": ["TypeScript", "JavaScript", "CSS", "YAML", "Markdown"],
+    "frameworks": [
+      "Next.js 14",
+      "React",
+      "TailwindCSS",
+      "Shadcn/ui",
+      "Apollo GraphQL"
+    ],
+    "description": "Personal resume website built with Next.js 14, React, TypeScript, Shadcn/ui, and TailwindCSS. Features single-file data configuration for easy content updates.",
+    "analyzedAt": "2026-05-31T03:07:26Z",
+    "gitCommitHash": "7c71d2932c715ff0e94b5ea5d172d37201b7a3bb"
+  },
+  "nodes": [
+    {
+      "id": "file:.github/workflows/nextjs.yml",
+      "type": "pipeline",
+      "name": "nextjs.yml",
+      "filePath": ".github/workflows/nextjs.yml",
+      "summary": "GitHub Actions CI/CD workflow for building and deploying Next.js application to Vercel. Configures Node.js environment, runs linting, builds the project, and deploys on successful checks.",
+      "tags": ["github-actions", "ci-cd", "deployment", "vercel"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project README documenting the web-cv resume website features. Highlights include single-file data configuration, Next.js 14 with React/TypeScript stack, Shadcn/ui components, TailwindCSS styling, responsive design, and Vercel optimization.",
+      "tags": ["documentation", "overview", "project-intro"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:components.json",
+      "type": "config",
+      "name": "components.json",
+      "filePath": "components.json",
+      "summary": "Shadcn/ui component library configuration. Defines component styling as 'default', enables React Server Components support, configures TailwindCSS integration with gray base color and CSS variables. Sets up path aliases for @/components and @/lib/utils.",
+      "tags": ["shadcn", "ui-components", "configuration", "tailwind"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "NPM package manifest for web-cv resume website. Declares dependencies including Next.js 14, React 18, Apollo Server, GraphQL, TypeGraphQL, Radix UI primitives, TailwindCSS. Dev dependencies include TypeScript, ESLint, Prettier with Tailwind plugin.",
+      "tags": ["npm", "dependencies", "nextjs", "react", "graphql"],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript compiler configuration targeting ES2021. Enables strict mode, ESNext modules with bundler resolution. Configures path alias @/* to map to ./src/* for cleaner imports. Enables experimental decorators and decorator metadata for TypeGraphQL.",
+      "tags": ["typescript", "configuration", "path-aliases", "decorators"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/page.tsx",
+      "type": "file",
+      "name": "page.tsx",
+      "filePath": "src/app/page.tsx",
+      "summary": "Main resume page component and entry point. Renders the complete resume with Header, Summary, WorkExperience, Education, Skills, and Projects sections. Also exports metadata for SEO (OpenGraph, Twitter cards). Provides command menu navigation.",
+      "tags": ["nextjs", "page", "resume", "main-entry"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/page.tsx:ResumePage",
+      "type": "function",
+      "name": "ResumePage",
+      "filePath": "src/app/page.tsx",
+      "summary": "Default export React component that renders the complete resume layout with all sections in a responsive container. Supports print styling.",
+      "tags": ["react", "component", "resume"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/page.tsx:getCommandMenuLinks",
+      "type": "function",
+      "name": "getCommandMenuLinks",
+      "filePath": "src/app/page.tsx",
+      "summary": "Transforms resume contact data into command menu link format for keyboard navigation.",
+      "tags": ["utils", "navigation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/layout.tsx",
+      "type": "file",
+      "name": "layout.tsx",
+      "filePath": "src/app/layout.tsx",
+      "summary": "Root Next.js layout component. Sets up the HTML document with Inter font from Google Fonts, applies global styles, and integrates Vercel Analytics for traffic monitoring.",
+      "tags": ["nextjs", "layout", "root", "analytics"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/graphql/route.ts",
+      "type": "endpoint",
+      "name": "route.ts",
+      "filePath": "src/app/graphql/route.ts",
+      "summary": "Next.js API route handler for GraphQL endpoint. Creates an Apollo Server instance with TypeGraphQL schema, enables introspection and local landing page. Exports GET and POST handlers for the GraphQL API.",
+      "tags": ["graphql", "api", "apollo", "endpoint", "nextjs"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/apollo/type-defs.ts",
+      "type": "schema",
+      "name": "type-defs.ts",
+      "filePath": "src/apollo/type-defs.ts",
+      "summary": "GraphQL schema definitions using TypeGraphQL decorators. Defines ObjectType classes for Social, Contact, Education, Work, Link, Project, and Me types. These mirror the RESUME_DATA structure for GraphQL API exposure.",
+      "tags": ["graphql", "schema", "typegraph", "types"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/apollo/resolvers.ts",
+      "type": "file",
+      "name": "resolvers.ts",
+      "filePath": "src/apollo/resolvers.ts",
+      "summary": "GraphQL resolver for the Me type. MeResolver class exposes a 'me' query that returns the entire RESUME_DATA object as a GraphQL Me type.",
+      "tags": ["graphql", "resolver", "api"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/apollo/resolvers.ts:MeResolver.me",
+      "type": "function",
+      "name": "me",
+      "filePath": "src/apollo/resolvers.ts",
+      "summary": "GraphQL query resolver that returns RESUME_DATA for the Me query.",
+      "tags": ["graphql", "query", "resolver"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/components/Header.tsx",
+      "type": "file",
+      "name": "Header.tsx",
+      "filePath": "src/app/components/Header.tsx",
+      "summary": "Resume header component displaying personal info, avatar, location link, and contact buttons (email, phone, social media). Handles both screen and print layouts with responsive styling.",
+      "tags": ["react", "component", "header", "resume"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/components/Header.tsx:Header",
+      "type": "function",
+      "name": "Header",
+      "filePath": "src/app/components/Header.tsx",
+      "summary": "Main header component rendering name, title, location, avatar, and contact information from RESUME_DATA.",
+      "tags": ["react", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/components/Summary.tsx",
+      "type": "file",
+      "name": "Summary.tsx",
+      "filePath": "src/app/components/Summary.tsx",
+      "summary": "About/Summary section component that displays professional summary. Calculates total years of experience from work history and renders dynamic summary text based on experience.",
+      "tags": ["react", "component", "about", "resume"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/components/Summary.tsx:Summary",
+      "type": "function",
+      "name": "Summary",
+      "filePath": "src/app/components/Summary.tsx",
+      "summary": "Summary component that renders professional summary, calculating experience years automatically.",
+      "tags": ["react", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/components/WorkExperience.tsx",
+      "type": "file",
+      "name": "WorkExperience.tsx",
+      "filePath": "src/app/components/WorkExperience.tsx",
+      "summary": "Work experience section displaying chronological list of employment. Shows company name with link, title, work period, badges for technologies, and detailed descriptions. Responsive layout adapts for mobile/desktop.",
+      "tags": ["react", "component", "work", "timeline", "resume"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/components/WorkExperience.tsx:WorkExperience",
+      "type": "function",
+      "name": "WorkExperience",
+      "filePath": "src/app/components/WorkExperience.tsx",
+      "summary": "Main work experience component rendering a feed of work items in chronological order.",
+      "tags": ["react", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/components/Projects.tsx",
+      "type": "file",
+      "name": "Projects.tsx",
+      "filePath": "src/app/components/Projects.tsx",
+      "summary": "Projects showcase section displaying portfolio work with company logos, tech stack badges, descriptions, and external links. Uses Card components for layout.",
+      "tags": ["react", "component", "projects", "portfolio", "resume"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/components/Projects.tsx:Projects",
+      "type": "function",
+      "name": "Projects",
+      "filePath": "src/app/components/Projects.tsx",
+      "summary": "Projects component rendering portfolio items with logos, tech stack, and descriptions.",
+      "tags": ["react", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/components/Education.tsx",
+      "type": "file",
+      "name": "Education.tsx",
+      "filePath": "src/app/components/Education.tsx",
+      "summary": "Education section displaying academic background with school names, degrees, and graduation periods. Uses Cards for consistent layout.",
+      "tags": ["react", "component", "education", "resume"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/components/Education.tsx:Education",
+      "type": "function",
+      "name": "Education",
+      "filePath": "src/app/components/Education.tsx",
+      "summary": "Education component rendering list of educational qualifications.",
+      "tags": ["react", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/components/Skills.tsx",
+      "type": "file",
+      "name": "Skills.tsx",
+      "filePath": "src/app/components/Skills.tsx",
+      "summary": "Skills section displaying technical and professional skill tags. Renders skills as a wrapping flex container of Badge components.",
+      "tags": ["react", "component", "skills", "resume"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/app/components/Skills.tsx:Skills",
+      "type": "function",
+      "name": "Skills",
+      "filePath": "src/app/components/Skills.tsx",
+      "summary": "Skills component rendering list of skill badges.",
+      "tags": ["react", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/globals.css",
+      "type": "file",
+      "name": "globals.css",
+      "filePath": "src/app/globals.css",
+      "summary": "Global CSS styles using Tailwind CSS directives. Defines custom properties for colors and applies base layer styles.",
+      "tags": ["css", "tailwind", "styles", "global"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/opengraph-image.tsx",
+      "type": "file",
+      "name": "opengraph-image.tsx",
+      "filePath": "src/app/opengraph-image.tsx",
+      "summary": "OpenGraph image generator for social sharing. Generates dynamic OG images with resume owner's profile information.",
+      "tags": ["nextjs", "opengraph", "seo", "image"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/command-menu.tsx",
+      "type": "file",
+      "name": "command-menu.tsx",
+      "filePath": "src/components/command-menu.tsx",
+      "summary": "Keyboard-navigable command palette for quick navigation to social links and contact pages. Uses cmdk library for command menu functionality.",
+      "tags": ["react", "component", "navigation", "keyboard", "cmd"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/components/command-menu.tsx:CommandMenu",
+      "type": "function",
+      "name": "CommandMenu",
+      "filePath": "src/components/command-menu.tsx",
+      "summary": "Command menu component providing keyboard navigation to external links.",
+      "tags": ["react", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/print-drawer.tsx",
+      "type": "file",
+      "name": "print-drawer.tsx",
+      "filePath": "src/components/print-drawer.tsx",
+      "summary": "Print functionality component that triggers the browser print dialog. Hidden from screen view, only visible during print.",
+      "tags": ["react", "component", "print", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/avatar.tsx",
+      "type": "file",
+      "name": "avatar.tsx",
+      "filePath": "src/components/ui/avatar.tsx",
+      "summary": "Shadcn/ui Avatar component with AvatarImage and AvatarFallback sub-components. Used for displaying user profile pictures with fallback to initials.",
+      "tags": ["shadcn", "ui", "avatar", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/badge.tsx",
+      "type": "file",
+      "name": "badge.tsx",
+      "filePath": "src/components/ui/badge.tsx",
+      "summary": "Shadcn/ui Badge component for displaying small labels and tags. Supports secondary variant styling.",
+      "tags": ["shadcn", "ui", "badge", "label", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/button.tsx",
+      "type": "file",
+      "name": "button.tsx",
+      "filePath": "src/components/ui/button.tsx",
+      "summary": "Shadcn/ui Button component built on Radix Slot for polymorphic 'asChild' pattern. Supports multiple variants (default, outline, ghost, secondary) and sizes.",
+      "tags": ["shadcn", "ui", "button", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/icons/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/components/icons/index.ts",
+      "summary": "Icon barrel exports - re-exports GitHubIcon, LinkedInIcon, and XIcon for easy importing.",
+      "tags": ["icons", "exports", "barrel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/icons/GitHubIcon.tsx",
+      "type": "file",
+      "name": "GitHubIcon.tsx",
+      "filePath": "src/components/icons/GitHubIcon.tsx",
+      "summary": "GitHub social icon component using inline SVG.",
+      "tags": ["icon", "github", "social"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/icons/LinkedInIcon.tsx",
+      "type": "file",
+      "name": "LinkedInIcon.tsx",
+      "filePath": "src/components/icons/LinkedInIcon.tsx",
+      "summary": "LinkedIn social icon component using inline SVG.",
+      "tags": ["icon", "linkedin", "social"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/icons/XIcon.tsx",
+      "type": "file",
+      "name": "XIcon.tsx",
+      "filePath": "src/components/icons/XIcon.tsx",
+      "summary": "X (formerly Twitter) social icon component using inline SVG.",
+      "tags": ["icon", "x", "twitter", "social"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/data/resume-data.tsx",
+      "type": "file",
+      "name": "resume-data.tsx",
+      "filePath": "src/data/resume-data.tsx",
+      "summary": "Central data configuration file containing all resume content. Exports RESUME_DATA constant with personal info, contact details, education history, work experience, skills, and projects. The single configuration file mentioned in README that enables quick setup.",
+      "tags": ["data", "config", "resume-content", "constants"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/data/resume-data.tsx:RESUME_DATA",
+      "type": "class",
+      "name": "RESUME_DATA",
+      "filePath": "src/data/resume-data.tsx",
+      "summary": "Main resume data object containing name, location, about, contact (email, tel, social links), education array, work array, skills array, and projects array. All resume content flows from this constant.",
+      "tags": ["data", "resume", "content"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/card.tsx",
+      "type": "file",
+      "name": "card.tsx",
+      "filePath": "src/components/ui/card.tsx",
+      "summary": "Shadcn/ui Card component with CardHeader, CardContent, CardTitle, CardDescription, and CardFooter variants. Used for displaying work experience entries and project cards.",
+      "tags": ["shadcn", "ui", "card", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/ui/command.tsx",
+      "type": "file",
+      "name": "command.tsx",
+      "filePath": "src/components/ui/command.tsx",
+      "summary": "Shadcn/ui Command component built on cmdk library. Provides searchable command menu functionality with CommandDialog, CommandInput, CommandList, CommandEmpty, CommandGroup, CommandItem, and CommandSeparator sub-components.",
+      "tags": ["shadcn", "ui", "command", "dialog", "component"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/ui/dialog.tsx",
+      "type": "file",
+      "name": "dialog.tsx",
+      "filePath": "src/components/ui/dialog.tsx",
+      "summary": "Shadcn/ui Dialog component built on Radix Dialog primitive. Provides modal dialog functionality with DialogPortal, DialogOverlay, DialogClose, DialogTrigger, DialogContent, DialogHeader, DialogFooter, DialogTitle, and DialogDescription.",
+      "tags": ["shadcn", "ui", "dialog", "modal", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/drawer.tsx",
+      "type": "file",
+      "name": "drawer.tsx",
+      "filePath": "src/components/ui/drawer.tsx",
+      "summary": "Shadcn/ui Drawer component built on Vaul library. Provides slide-out drawer panel functionality with Dialog-like API. Used for mobile navigation and print drawer functionality.",
+      "tags": ["shadcn", "ui", "drawer", "panel", "component"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/components/ui/section.tsx",
+      "type": "file",
+      "name": "section.tsx",
+      "filePath": "src/components/ui/section.tsx",
+      "summary": "Simple section wrapper component using HTML section element with Tailwind spacing utilities. Applies consistent vertical spacing between resume sections.",
+      "tags": ["shadcn", "ui", "section", "wrapper", "component"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/utils.ts",
+      "type": "file",
+      "name": "utils.ts",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Utility functions including cn() for merging Tailwind classes using clsx and tailwind-merge, and calculateExperienceYears() for computing total years of work experience from work history.",
+      "tags": ["utils", "tailwind", "css", "helpers"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/utils.ts:cn",
+      "type": "function",
+      "name": "cn",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Class name utility that merges Tailwind classes using clsx and tailwind-merge.",
+      "tags": ["utils", "css", "tailwind"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/lib/utils.ts:calculateExperienceYears",
+      "type": "function",
+      "name": "calculateExperienceYears",
+      "filePath": "src/lib/utils.ts",
+      "summary": "Calculates total years of work experience from an array of work items with start/end years.",
+      "tags": ["utils", "resume", "calculations"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tailwind.config.js",
+      "type": "config",
+      "name": "tailwind.config.js",
+      "filePath": "tailwind.config.js",
+      "summary": "Tailwind CSS configuration defining custom color palette based on CSS variables, custom container settings, extended theme with border-radius and keyframe animations for accordions. Uses tailwindcss-animate plugin.",
+      "tags": ["tailwind", "css", "configuration", "theme"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/images/logos/index.ts",
+      "type": "file",
+      "name": "index.ts",
+      "filePath": "src/images/logos/index.ts",
+      "summary": "Logo barrel exports - re-exports 16 company/brand logos (ConsultlyLogo, AmbitLogo, BarepapersLogo, BimLogo, CDGOLogo, ClevertechLogo, EvercastLogo, Howdy, JarockiMeLogo, JojoMobileLogo, MonitoLogo, MobileVikingsLogo, NSNLogo, ParabolLogo, TastyCloudLogo, YearProgressLogo, Minimal). Used for displaying company logos on resume.",
+      "tags": ["logos", "exports", "barrel", "companies"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/app/components/Header.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/app/components/Summary.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/app/components/WorkExperience.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/app/components/Education.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/app/components/Skills.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/app/components/Projects.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/data/resume-data.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/command-menu.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "file:src/app/globals.css",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/graphql/route.ts",
+      "target": "file:src/apollo/resolvers.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/graphql/route.ts",
+      "target": "file:src/apollo/type-defs.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/apollo/resolvers.ts",
+      "target": "file:src/data/resume-data.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/Header.tsx",
+      "target": "file:src/data/resume-data.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/Summary.tsx",
+      "target": "file:src/data/resume-data.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/WorkExperience.tsx",
+      "target": "file:src/data/resume-data.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/Header.tsx",
+      "target": "file:src/components/ui/button.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/Header.tsx",
+      "target": "file:src/components/ui/avatar.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/Summary.tsx",
+      "target": "file:src/components/ui/section.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/Summary.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/WorkExperience.tsx",
+      "target": "file:src/components/ui/badge.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/WorkExperience.tsx",
+      "target": "file:src/components/ui/card.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/WorkExperience.tsx",
+      "target": "file:src/components/ui/section.tsx",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/components/WorkExperience.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/section.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/data/resume-data.tsx",
+      "target": "file:src/images/logos/index.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/data/resume-data.tsx",
+      "target": "file:src/components/icons/index.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/card.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/button.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/badge.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/dialog.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/drawer.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/ui/command.tsx",
+      "target": "file:src/lib/utils.ts",
+      "type": "imports",
+      "direction": "forward"
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:infrastructure",
+      "name": "Infrastructure",
+      "description": "CI/CD pipelines and deployment configurations",
+      "nodeIds": ["file:.github/workflows/nextjs.yml"]
+    },
+    {
+      "id": "layer:configuration",
+      "name": "Configuration",
+      "description": "Project configuration files, package manifests, TypeScript and build tool configs",
+      "nodeIds": [
+        "config:package.json",
+        "config:tsconfig.json",
+        "config:components.json",
+        "file:tailwind.config.js",
+        "file:next.config.js",
+        "file:postcss.config.js"
+      ]
+    },
+    {
+      "id": "layer:app-pages",
+      "name": "App Pages",
+      "description": "Next.js app router pages, layout, and global styles. Entry points for the application.",
+      "nodeIds": [
+        "file:src/app/page.tsx",
+        "file:src/app/layout.tsx",
+        "file:src/app/globals.css",
+        "file:src/app/opengraph-image.tsx"
+      ]
+    },
+    {
+      "id": "layer:resume-components",
+      "name": "Resume Components",
+      "description": "Resume section components that render different parts of the CV (Header, Summary, WorkExperience, Education, Skills, Projects)",
+      "nodeIds": [
+        "file:src/app/components/Header.tsx",
+        "file:src/app/components/Summary.tsx",
+        "file:src/app/components/WorkExperience.tsx",
+        "file:src/app/components/Education.tsx",
+        "file:src/app/components/Skills.tsx",
+        "file:src/app/components/Projects.tsx"
+      ]
+    },
+    {
+      "id": "layer:graphql-api",
+      "name": "GraphQL API",
+      "description": "Apollo GraphQL server implementation with TypeGraphQL schema definitions and resolvers",
+      "nodeIds": [
+        "file:src/app/graphql/route.ts",
+        "file:src/apollo/type-defs.ts",
+        "file:src/apollo/resolvers.ts"
+      ]
+    },
+    {
+      "id": "layer:ui-primitives",
+      "name": "UI Primitives",
+      "description": "Shadcn/ui base components (Button, Badge, Card, Dialog, Avatar, Section, Drawer, Command) providing reusable UI building blocks",
+      "nodeIds": [
+        "file:src/components/ui/button.tsx",
+        "file:src/components/ui/badge.tsx",
+        "file:src/components/ui/card.tsx",
+        "file:src/components/ui/dialog.tsx",
+        "file:src/components/ui/drawer.tsx",
+        "file:src/components/ui/avatar.tsx",
+        "file:src/components/ui/section.tsx",
+        "file:src/components/ui/command.tsx"
+      ]
+    },
+    {
+      "id": "layer:shared-components",
+      "name": "Shared Components",
+      "description": "Cross-cutting components like command menu, print drawer, and icon components",
+      "nodeIds": [
+        "file:src/components/command-menu.tsx",
+        "file:src/components/print-drawer.tsx",
+        "file:src/components/icons/index.ts",
+        "file:src/components/icons/GitHubIcon.tsx",
+        "file:src/components/icons/LinkedInIcon.tsx",
+        "file:src/components/icons/XIcon.tsx"
+      ]
+    },
+    {
+      "id": "layer:data-layer",
+      "name": "Data Layer",
+      "description": "Central resume data configuration and company logo assets",
+      "nodeIds": [
+        "file:src/data/resume-data.tsx",
+        "file:src/images/logos/index.ts"
+      ]
+    },
+    {
+      "id": "layer:utilities",
+      "name": "Utilities",
+      "description": "Helper functions for class name merging and experience calculations",
+      "nodeIds": ["file:src/lib/utils.ts"]
+    },
+    {
+      "id": "layer:documentation",
+      "name": "Documentation",
+      "description": "Project documentation files",
+      "nodeIds": ["document:README.md"]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview",
+      "description": "Start with the README to understand the project purpose: a personal resume website built with Next.js 14, React, TypeScript, Shadcn/ui, and TailwindCSS. The README highlights single-file data configuration and responsive design.",
+      "nodeIds": ["document:README.md"],
+      "languageLesson": "This project uses a 'data-first' architecture where all resume content lives in a single TypeScript file (src/data/resume-data.tsx). This makes it easy to update content without touching component code."
+    },
+    {
+      "order": 2,
+      "title": "Entry Point",
+      "description": "The main resume page at src/app/page.tsx is the entry point. It imports all resume section components and RESUME_DATA, rendering them in a structured layout with SEO metadata.",
+      "nodeIds": ["file:src/app/page.tsx", "file:src/app/layout.tsx"]
+    },
+    {
+      "order": 3,
+      "title": "Resume Sections",
+      "description": "Six section components render different parts of the CV: Header (personal info + avatar), Summary (professional overview), WorkExperience (employment history), Education, Skills, and Projects. Each receives data via props from RESUME_DATA.",
+      "nodeIds": [
+        "file:src/app/components/Header.tsx",
+        "file:src/app/components/Summary.tsx",
+        "file:src/app/components/WorkExperience.tsx",
+        "file:src/app/components/Education.tsx",
+        "file:src/app/components/Skills.tsx",
+        "file:src/app/components/Projects.tsx"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Data Configuration",
+      "description": "The central data file exports RESUME_DATA containing all personal info, contact details, work history, education, skills, and projects. The calculateExperienceYears utility computes total years of experience from work entries.",
+      "nodeIds": ["file:src/data/resume-data.tsx", "file:src/lib/utils.ts"]
+    },
+    {
+      "order": 5,
+      "title": "UI Component Library",
+      "description": "Shadcn/ui primitives (Button, Badge, Card, Dialog, Avatar, Section) provide consistent styling. These are configured via components.json and styled with Tailwind CSS using CSS variables.",
+      "nodeIds": [
+        "file:src/components/ui/button.tsx",
+        "file:src/components/ui/badge.tsx",
+        "file:src/components/ui/card.tsx",
+        "file:src/components/ui/avatar.tsx",
+        "file:src/components/ui/section.tsx"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "GraphQL API",
+      "description": "An optional GraphQL API is available at /graphql endpoint using Apollo Server and TypeGraphQL. The MeResolver exposes resume data as a GraphQL query for programmatic access.",
+      "nodeIds": [
+        "file:src/app/graphql/route.ts",
+        "file:src/apollo/type-defs.ts",
+        "file:src/apollo/resolvers.ts"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Navigation",
+      "description": "The command menu (⌘K) provides keyboard navigation to external links (GitHub, LinkedIn, X, personal website). Social icons are defined in src/components/icons/",
+      "nodeIds": [
+        "file:src/components/command-menu.tsx",
+        "file:src/components/icons/index.ts",
+        "file:src/components/icons/GitHubIcon.tsx",
+        "file:src/components/icons/LinkedInIcon.tsx",
+        "file:src/components/icons/XIcon.tsx"
+      ]
+    },
+    {
+      "order": 8,
+      "title": "Deployment",
+      "description": "GitHub Actions CI/CD workflow automatically builds and deploys to Vercel on push. The workflow runs lint, build, and deploy steps.",
+      "nodeIds": ["file:.github/workflows/nextjs.yml"]
+    }
+  ]
+}

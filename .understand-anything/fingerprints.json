@@ -1,0 +1,1655 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "7c71d2932c715ff0e94b5ea5d172d37201b7a3bb",
+  "generatedAt": "2026-05-31T03:08:18.707Z",
+  "files": {
+    ".github/workflows/nextjs.yml": {
+      "filePath": ".github/workflows/nextjs.yml",
+      "contentHash": "d593d2d7524ab6b9b939ae2d9ed5e4eb3c86ef7a4fe84620eed427f2e7fb02c0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 92,
+      "hasStructuralAnalysis": true
+    },
+    ".understand-anything/.understandignore": {
+      "filePath": ".understand-anything/.understandignore",
+      "contentHash": "e9c905493145d00421ce7c4841353fdb8acc553c767c78640c5a0de89f1aa374",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 34,
+      "hasStructuralAnalysis": false
+    },
+    "components.json": {
+      "filePath": "components.json",
+      "contentHash": "5dde5a4e2eb2bba9b31c2f430998d1cd691f00365005a9ed7ffc75167e9aa862",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 17,
+      "hasStructuralAnalysis": true
+    },
+    "next.config.js": {
+      "filePath": "next.config.js",
+      "contentHash": "e9e756c427a02191c017babe8695ae266f703d2638c35513edc510bfda080a85",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 13,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "4dfa6e527576e194873d7ba59606e84f1ed001b47e83b9b61316de49c2d86497",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 49,
+      "hasStructuralAnalysis": true
+    },
+    "postcss.config.js": {
+      "filePath": "postcss.config.js",
+      "contentHash": "251ecddd4672c9cf467547e3dc535de00ad2129df26e7e7ae728fa4e5ac45fc5",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "980cd371dc85a777d1a70a204891fa1c4675c198f1343d042d9c60570faccbbc",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "src/apollo/resolvers.ts": {
+      "filePath": "src/apollo/resolvers.ts",
+      "contentHash": "cda0573d74885b9dfb0321470e62988de64f9f0abec0654403fbf086c097dfe5",
+      "functions": [],
+      "classes": [
+        {
+          "name": "MeResolver",
+          "methods": [
+            "me"
+          ],
+          "properties": [],
+          "exported": true,
+          "lineCount": 6
+        }
+      ],
+      "imports": [
+        {
+          "source": "type-graphql",
+          "specifiers": [
+            "Resolver",
+            "Query"
+          ]
+        },
+        {
+          "source": "./type-defs",
+          "specifiers": [
+            "Me"
+          ]
+        },
+        {
+          "source": "../data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        }
+      ],
+      "exports": [
+        "MeResolver"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/apollo/type-defs.ts": {
+      "filePath": "src/apollo/type-defs.ts",
+      "contentHash": "b8c198662d853ad33e4163b11ac969f3e43b9d30252aa351c33d02fdad8f8674",
+      "functions": [],
+      "classes": [
+        {
+          "name": "Social",
+          "methods": [],
+          "properties": [
+            "name",
+            "url"
+          ],
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "Contact",
+          "methods": [],
+          "properties": [
+            "email",
+            "tel",
+            "social"
+          ],
+          "exported": true,
+          "lineCount": 10
+        },
+        {
+          "name": "Education",
+          "methods": [],
+          "properties": [
+            "school",
+            "degree",
+            "start",
+            "end"
+          ],
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "Work",
+          "methods": [],
+          "properties": [
+            "company",
+            "link",
+            "badges",
+            "title",
+            "start",
+            "end",
+            "description"
+          ],
+          "exported": true,
+          "lineCount": 22
+        },
+        {
+          "name": "Link",
+          "methods": [],
+          "properties": [
+            "label",
+            "href"
+          ],
+          "exported": true,
+          "lineCount": 7
+        },
+        {
+          "name": "Project",
+          "methods": [],
+          "properties": [
+            "title",
+            "techStack",
+            "description",
+            "link"
+          ],
+          "exported": true,
+          "lineCount": 13
+        },
+        {
+          "name": "Me",
+          "methods": [],
+          "properties": [
+            "name",
+            "initials",
+            "location",
+            "locationLink",
+            "about",
+            "summary",
+            "avatarUrl",
+            "personalWebsiteUrl",
+            "contact",
+            "education",
+            "work",
+            "skills",
+            "projects"
+          ],
+          "exported": true,
+          "lineCount": 40
+        }
+      ],
+      "imports": [
+        {
+          "source": "type-graphql",
+          "specifiers": [
+            "ObjectType",
+            "Field"
+          ]
+        }
+      ],
+      "exports": [
+        "Social",
+        "Contact",
+        "Education",
+        "Work",
+        "Link",
+        "Project",
+        "Me"
+      ],
+      "totalLines": 128,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/components/Education.tsx": {
+      "filePath": "src/app/components/Education.tsx",
+      "contentHash": "31b40199a79d6f4fa599f8f804c1b35b005c037c09ec3969ee801d2e809133ca",
+      "functions": [
+        {
+          "name": "EducationPeriod",
+          "params": [
+            "{ start, end }"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "EducationItem",
+          "params": [
+            "{ education }"
+          ],
+          "exported": false,
+          "lineCount": 27
+        },
+        {
+          "name": "Education",
+          "params": [
+            "{ education }"
+          ],
+          "exported": true,
+          "lineCount": 20
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/card",
+          "specifiers": [
+            "Card",
+            "CardHeader",
+            "CardContent"
+          ]
+        },
+        {
+          "source": "@/components/ui/section",
+          "specifiers": [
+            "Section"
+          ]
+        },
+        {
+          "source": "@/data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        }
+      ],
+      "exports": [
+        "Education"
+      ],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/components/Header.tsx": {
+      "filePath": "src/app/components/Header.tsx",
+      "contentHash": "0414becbbe97b9acdd273827e1f0ce0241d3ba8b9c391e39cf5bbc1164c7c060",
+      "functions": [
+        {
+          "name": "LocationLink",
+          "params": [
+            "{ location, locationLink }"
+          ],
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "SocialButton",
+          "params": [
+            "{ href, icon: Icon, label }"
+          ],
+          "exported": false,
+          "lineCount": 14
+        },
+        {
+          "name": "ContactButtons",
+          "params": [
+            "{ contact, personalWebsiteUrl }"
+          ],
+          "exported": false,
+          "lineCount": 39
+        },
+        {
+          "name": "PrintContact",
+          "params": [
+            "{ contact, personalWebsiteUrl }"
+          ],
+          "exported": false,
+          "lineCount": 39
+        },
+        {
+          "name": "Header",
+          "params": [],
+          "exported": true,
+          "lineCount": 40
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "GlobeIcon",
+            "MailIcon",
+            "PhoneIcon"
+          ]
+        },
+        {
+          "source": "@/components/ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "@/components/ui/avatar",
+          "specifiers": [
+            "Avatar",
+            "AvatarFallback",
+            "AvatarImage"
+          ]
+        },
+        {
+          "source": "@/data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        }
+      ],
+      "exports": [
+        "Header"
+      ],
+      "totalLines": 182,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/components/Projects.tsx": {
+      "filePath": "src/app/components/Projects.tsx",
+      "contentHash": "d48b0ffc2e1704f63eef5e57a765f7c7bd3ef19172a41e90a191098c68848998",
+      "functions": [
+        {
+          "name": "ProjectLink",
+          "params": [
+            "{ title, link }"
+          ],
+          "exported": false,
+          "lineCount": 29
+        },
+        {
+          "name": "ProjectTags",
+          "params": [
+            "{ tags }"
+          ],
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "ProjectCard",
+          "params": [
+            "{ title, description, tags, link }"
+          ],
+          "exported": false,
+          "lineCount": 25
+        },
+        {
+          "name": "Projects",
+          "params": [
+            "{ projects }"
+          ],
+          "exported": true,
+          "lineCount": 28
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "../../components/ui/badge",
+          "specifiers": [
+            "Badge"
+          ]
+        },
+        {
+          "source": "../../components/ui/card",
+          "specifiers": [
+            "Card",
+            "CardHeader",
+            "CardTitle",
+            "CardDescription",
+            "CardContent"
+          ]
+        },
+        {
+          "source": "../../components/ui/section",
+          "specifiers": [
+            "Section"
+          ]
+        },
+        {
+          "source": "../../data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        }
+      ],
+      "exports": [
+        "Projects"
+      ],
+      "totalLines": 152,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/components/Skills.tsx": {
+      "filePath": "src/app/components/Skills.tsx",
+      "contentHash": "fb0a9f2210bf5a15958855faade104ff8320f00b61f71f1045d2fef0ed21d327",
+      "functions": [
+        {
+          "name": "SkillsList",
+          "params": [
+            "{ skills, className }"
+          ],
+          "exported": false,
+          "lineCount": 16
+        },
+        {
+          "name": "Skills",
+          "params": [
+            "{ skills, className }"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/badge",
+          "specifiers": [
+            "Badge"
+          ]
+        },
+        {
+          "source": "@/components/ui/section",
+          "specifiers": [
+            "Section"
+          ]
+        },
+        {
+          "source": "@/data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Skills"
+      ],
+      "totalLines": 52,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/components/Summary.tsx": {
+      "filePath": "src/app/components/Summary.tsx",
+      "contentHash": "dd14f264184000b7ce1a7f9ba004f54ea0b1924679ff0148934e0bff30478987",
+      "functions": [
+        {
+          "name": "Summary",
+          "params": [
+            "{ summary, className }"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        },
+        {
+          "source": "../../components/ui/section",
+          "specifiers": [
+            "Section"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "calculateExperienceYears"
+          ]
+        }
+      ],
+      "exports": [
+        "Summary"
+      ],
+      "totalLines": 31,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/components/WorkExperience.tsx": {
+      "filePath": "src/app/components/WorkExperience.tsx",
+      "contentHash": "3ca2dd495db89164f8270076b7657ce0923e4b8a4a115dd920a38f9f69df6525",
+      "functions": [
+        {
+          "name": "BadgeList",
+          "params": [
+            "{ className, badges }"
+          ],
+          "exported": false,
+          "lineCount": 21
+        },
+        {
+          "name": "WorkPeriod",
+          "params": [
+            "{ start, end }"
+          ],
+          "exported": false,
+          "lineCount": 10
+        },
+        {
+          "name": "CompanyLink",
+          "params": [
+            "{ company, link }"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "WorkExperienceItem",
+          "params": [
+            "{ work }"
+          ],
+          "exported": false,
+          "lineCount": 36
+        },
+        {
+          "name": "WorkExperience",
+          "params": [
+            "{ work }"
+          ],
+          "exported": true,
+          "lineCount": 16
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/ui/badge",
+          "specifiers": [
+            "Badge"
+          ]
+        },
+        {
+          "source": "@/components/ui/card",
+          "specifiers": [
+            "Card",
+            "CardHeader",
+            "CardContent"
+          ]
+        },
+        {
+          "source": "@/components/ui/section",
+          "specifiers": [
+            "Section"
+          ]
+        },
+        {
+          "source": "@/data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "WorkExperience"
+      ],
+      "totalLines": 151,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/globals.css": {
+      "filePath": "src/app/globals.css",
+      "contentHash": "e0269f6c1f5cdf75cc3a354ce9766887a94a0490afe3d6defd6dc44365c2766d",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 81,
+      "hasStructuralAnalysis": false
+    },
+    "src/app/graphql/route.ts": {
+      "filePath": "src/app/graphql/route.ts",
+      "contentHash": "5fed47b8f51b75d0414f136aed369ba8fc1aa43e4fc146274600aa5787850388",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "reflect-metadata",
+          "specifiers": []
+        },
+        {
+          "source": "@apollo/server",
+          "specifiers": [
+            "ApolloServer"
+          ]
+        },
+        {
+          "source": "@as-integrations/next",
+          "specifiers": [
+            "startServerAndCreateNextHandler"
+          ]
+        },
+        {
+          "source": "@apollo/server/plugin/landingPage/default",
+          "specifiers": [
+            "ApolloServerPluginLandingPageLocalDefault"
+          ]
+        },
+        {
+          "source": "../../apollo/resolvers",
+          "specifiers": [
+            "MeResolver"
+          ]
+        },
+        {
+          "source": "type-graphql",
+          "specifiers": [
+            "buildSchema"
+          ]
+        },
+        {
+          "source": "next/server",
+          "specifiers": [
+            "NextRequest"
+          ]
+        }
+      ],
+      "exports": [
+        "GET",
+        "POST"
+      ],
+      "totalLines": 22,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/layout.tsx": {
+      "filePath": "src/app/layout.tsx",
+      "contentHash": "03b6112a3a7f827d9731fe4a1903814b6a090ef8ac0f8c5c784cb13ddc22901c",
+      "functions": [
+        {
+          "name": "RootLayout",
+          "params": [
+            "{\n  children,\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@vercel/analytics/react",
+          "specifiers": [
+            "Analytics"
+          ]
+        },
+        {
+          "source": "next/font/google",
+          "specifiers": [
+            "Inter"
+          ]
+        },
+        {
+          "source": "./globals.css",
+          "specifiers": []
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "RootLayout"
+      ],
+      "totalLines": 24,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/opengraph-image.tsx": {
+      "filePath": "src/app/opengraph-image.tsx",
+      "contentHash": "e7c271f2ece63887de669347b444c922446c05d618d9059c1aca820dec499d42",
+      "functions": [
+        {
+          "name": "Image",
+          "params": [],
+          "exported": true,
+          "lineCount": 74
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next/og",
+          "specifiers": [
+            "ImageResponse"
+          ]
+        },
+        {
+          "source": "../data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        }
+      ],
+      "exports": [
+        "runtime",
+        "alt",
+        "size",
+        "contentType",
+        "Image"
+      ],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/page.tsx": {
+      "filePath": "src/app/page.tsx",
+      "contentHash": "7b4720c5d0845f09a5df3ef5394116394b8dcbb9a2d0e7375faccfb6ab12013d",
+      "functions": [
+        {
+          "name": "getCommandMenuLinks",
+          "params": [],
+          "exported": false,
+          "lineCount": 18
+        },
+        {
+          "name": "ResumePage",
+          "params": [],
+          "exported": true,
+          "lineCount": 35
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/command-menu",
+          "specifiers": [
+            "CommandMenu"
+          ]
+        },
+        {
+          "source": "next",
+          "specifiers": [
+            "Metadata"
+          ]
+        },
+        {
+          "source": "@/data/resume-data",
+          "specifiers": [
+            "RESUME_DATA"
+          ]
+        },
+        {
+          "source": "./components/WorkExperience",
+          "specifiers": [
+            "WorkExperience"
+          ]
+        },
+        {
+          "source": "./components/Projects",
+          "specifiers": [
+            "Projects"
+          ]
+        },
+        {
+          "source": "./components/Education",
+          "specifiers": [
+            "Education"
+          ]
+        },
+        {
+          "source": "./components/Summary",
+          "specifiers": [
+            "Summary"
+          ]
+        },
+        {
+          "source": "./components/Skills",
+          "specifiers": [
+            "Skills"
+          ]
+        },
+        {
+          "source": "./components/Header",
+          "specifiers": [
+            "Header"
+          ]
+        }
+      ],
+      "exports": [
+        "metadata",
+        "ResumePage"
+      ],
+      "totalLines": 93,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/command-menu.tsx": {
+      "filePath": "src/components/command-menu.tsx",
+      "contentHash": "6e3e9ba5618278b8eb54c9e7e56d9609d6a37bb051a46398145a1b62f672d673",
+      "functions": [
+        {
+          "name": "CommandMenu",
+          "params": [
+            "{ links }"
+          ],
+          "exported": true,
+          "lineCount": 68
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@/components/ui/command",
+          "specifiers": [
+            "CommandDialog",
+            "CommandEmpty",
+            "CommandGroup",
+            "CommandInput",
+            "CommandItem",
+            "CommandList",
+            "CommandSeparator"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "CommandIcon"
+          ]
+        },
+        {
+          "source": "./ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        }
+      ],
+      "exports": [
+        "CommandMenu"
+      ],
+      "totalLines": 89,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/icons/GitHubIcon.tsx": {
+      "filePath": "src/components/icons/GitHubIcon.tsx",
+      "contentHash": "a4385186f4b682e65ecee799e7f9d98fddb762e3355620f01e6da56237b821c3",
+      "functions": [
+        {
+          "name": "GitHubIcon",
+          "params": [
+            "props"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "GitHubIcon"
+      ],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/icons/index.ts": {
+      "filePath": "src/components/icons/index.ts",
+      "contentHash": "6f9261e053e56972b5465e654dfebd80da72dc1fe88ff7b0d29afdfd5d1a0d84",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./GitHubIcon",
+          "specifiers": [
+            "GitHubIcon"
+          ]
+        },
+        {
+          "source": "./LinkedInIcon",
+          "specifiers": [
+            "LinkedInIcon"
+          ]
+        },
+        {
+          "source": "./XIcon",
+          "specifiers": [
+            "XIcon"
+          ]
+        }
+      ],
+      "exports": [
+        "GitHubIcon",
+        "LinkedInIcon",
+        "XIcon"
+      ],
+      "totalLines": 6,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/icons/LinkedInIcon.tsx": {
+      "filePath": "src/components/icons/LinkedInIcon.tsx",
+      "contentHash": "f2ddf36f33f9ab43445b0512628841c283a691d5590c703dc7cfa8ca979fc19e",
+      "functions": [
+        {
+          "name": "LinkedInIcon",
+          "params": [
+            "props"
+          ],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "LinkedInIcon"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/icons/XIcon.tsx": {
+      "filePath": "src/components/icons/XIcon.tsx",
+      "contentHash": "d74d78619145257176b99eb421f2e4735d5546c15cb3ebec66036bd754ff97d0",
+      "functions": [
+        {
+          "name": "XIcon",
+          "params": [
+            "props"
+          ],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "XIcon"
+      ],
+      "totalLines": 12,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/print-drawer.tsx": {
+      "filePath": "src/components/print-drawer.tsx",
+      "contentHash": "ae151d78b9e1f4884e7f235b91a1767465457470a0590320542362e44baaef85",
+      "functions": [
+        {
+          "name": "PrintDrawer",
+          "params": [],
+          "exported": true,
+          "lineCount": 26
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./ui/button",
+          "specifiers": [
+            "Button"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "PrinterIcon"
+          ]
+        },
+        {
+          "source": "./ui/drawer",
+          "specifiers": [
+            "Drawer",
+            "DrawerTrigger",
+            "DrawerContent",
+            "DrawerHeader",
+            "DrawerTitle",
+            "DrawerDescription",
+            "DrawerFooter",
+            "DrawerClose"
+          ]
+        }
+      ],
+      "exports": [
+        "PrintDrawer"
+      ],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/avatar.tsx": {
+      "filePath": "src/components/ui/avatar.tsx",
+      "contentHash": "8a09714a54bdb01b33daddcfcc518850fd6689be19bf600fd966f7d5ff85efcb",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-avatar",
+          "specifiers": [
+            "* as AvatarPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Avatar",
+        "AvatarImage",
+        "AvatarFallback"
+      ],
+      "totalLines": 51,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/badge.tsx": {
+      "filePath": "src/components/ui/badge.tsx",
+      "contentHash": "923282c9b312d32d3717bc6835a1526767e600011a9b8e4fe3d0bceaf6d35723",
+      "functions": [
+        {
+          "name": "Badge",
+          "params": [
+            "{ className, variant, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 5
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Badge",
+        "badgeVariants"
+      ],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/button.tsx": {
+      "filePath": "src/components/ui/button.tsx",
+      "contentHash": "8299594fea4c84d78c3acc52cbed6ccbab68d71948fcf04db624346c4a925f74",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-slot",
+          "specifiers": [
+            "Slot"
+          ]
+        },
+        {
+          "source": "class-variance-authority",
+          "specifiers": [
+            "cva",
+            "VariantProps"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ],
+      "totalLines": 59,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/card.tsx": {
+      "filePath": "src/components/ui/card.tsx",
+      "contentHash": "3989593c17a60de6c61d0d2c64c7198403ec67ab60a8e663ae7f13cec5927351",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Card",
+        "CardHeader",
+        "CardFooter",
+        "CardTitle",
+        "CardDescription",
+        "CardContent"
+      ],
+      "totalLines": 87,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/command.tsx": {
+      "filePath": "src/components/ui/command.tsx",
+      "contentHash": "15abb403b6a085016c4d687a3bd83ee130dfc9708513584317f57fc48048b95c",
+      "functions": [
+        {
+          "name": "CommandDialog",
+          "params": [
+            "{ children, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 11
+        },
+        {
+          "name": "CommandShortcut",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 14
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-dialog",
+          "specifiers": [
+            "DialogProps"
+          ]
+        },
+        {
+          "source": "cmdk",
+          "specifiers": [
+            "CommandPrimitive"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "Search"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "@/components/ui/dialog",
+          "specifiers": [
+            "Dialog",
+            "DialogContent"
+          ]
+        }
+      ],
+      "exports": [
+        "Command",
+        "CommandDialog",
+        "CommandInput",
+        "CommandList",
+        "CommandEmpty",
+        "CommandGroup",
+        "CommandItem",
+        "CommandShortcut",
+        "CommandSeparator"
+      ],
+      "totalLines": 157,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/dialog.tsx": {
+      "filePath": "src/components/ui/dialog.tsx",
+      "contentHash": "8a70596c21a887beaa289f16e8526ef92ce881f6d039f980f993ba4c2001c9e4",
+      "functions": [
+        {
+          "name": "DialogHeader",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        },
+        {
+          "name": "DialogFooter",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 12
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "@radix-ui/react-dialog",
+          "specifiers": [
+            "* as DialogPrimitive"
+          ]
+        },
+        {
+          "source": "lucide-react",
+          "specifiers": [
+            "X"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Dialog",
+        "DialogPortal",
+        "DialogOverlay",
+        "DialogClose",
+        "DialogTrigger",
+        "DialogContent",
+        "DialogHeader",
+        "DialogFooter",
+        "DialogTitle",
+        "DialogDescription"
+      ],
+      "totalLines": 123,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/drawer.tsx": {
+      "filePath": "src/components/ui/drawer.tsx",
+      "contentHash": "3284b34b1fa60917976e60609526d4d340e4608418e1ab64b14231c3c0c06bcb",
+      "functions": [
+        {
+          "name": "Drawer",
+          "params": [
+            "{\n  shouldScaleBackground = true,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "DrawerHeader",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 9
+        },
+        {
+          "name": "DrawerFooter",
+          "params": [
+            "{\n  className,\n  ...props\n}"
+          ],
+          "exported": true,
+          "lineCount": 9
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "* as React"
+          ]
+        },
+        {
+          "source": "vaul",
+          "specifiers": [
+            "DrawerPrimitive"
+          ]
+        },
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        }
+      ],
+      "exports": [
+        "Drawer",
+        "DrawerPortal",
+        "DrawerOverlay",
+        "DrawerTrigger",
+        "DrawerClose",
+        "DrawerContent",
+        "DrawerHeader",
+        "DrawerFooter",
+        "DrawerTitle",
+        "DrawerDescription"
+      ],
+      "totalLines": 120,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ui/section.tsx": {
+      "filePath": "src/components/ui/section.tsx",
+      "contentHash": "27b5965379d4dc7a0467c552e29a65e784be5db9234f62953b19a651d75dc369",
+      "functions": [
+        {
+          "name": "Section",
+          "params": [
+            "{ className, ...props }"
+          ],
+          "exported": true,
+          "lineCount": 8
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/lib/utils",
+          "specifiers": [
+            "cn"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "Section"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "src/data/resume-data.tsx": {
+      "filePath": "src/data/resume-data.tsx",
+      "contentHash": "bf5beee38a5b69a514ad0c2b92b52196ea088e421802966bd02abe6648b3da59",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/images/logos",
+          "specifiers": [
+            "ClevertechLogo",
+            "ConsultlyLogo",
+            "JojoMobileLogo",
+            "MonitoLogo",
+            "NSNLogo",
+            "ParabolLogo"
+          ]
+        },
+        {
+          "source": "@/components/icons",
+          "specifiers": [
+            "GitHubIcon",
+            "LinkedInIcon",
+            "XIcon"
+          ]
+        }
+      ],
+      "exports": [
+        "RESUME_DATA"
+      ],
+      "totalLines": 330,
+      "hasStructuralAnalysis": true
+    },
+    "src/images/logos/index.ts": {
+      "filePath": "src/images/logos/index.ts",
+      "contentHash": "aa0b3c66678d8e2a8c591fc8a21c54288aa9b8ed18db7ee2f9dfb8a66c6df6c1",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./consultly.svg",
+          "specifiers": [
+            "ConsultlyLogo"
+          ]
+        },
+        {
+          "source": "./ambit.png",
+          "specifiers": [
+            "AmbitLogo"
+          ]
+        },
+        {
+          "source": "./barepapers.svg",
+          "specifiers": [
+            "BarepapersLogo"
+          ]
+        },
+        {
+          "source": "./bim.png",
+          "specifiers": [
+            "BimLogo"
+          ]
+        },
+        {
+          "source": "./cdgo.png",
+          "specifiers": [
+            "CDGOLogo"
+          ]
+        },
+        {
+          "source": "./clevertech.png",
+          "specifiers": [
+            "ClevertechLogo"
+          ]
+        },
+        {
+          "source": "./evercast.svg",
+          "specifiers": [
+            "EvercastLogo"
+          ]
+        },
+        {
+          "source": "./howdy.png",
+          "specifiers": [
+            "Howdy"
+          ]
+        },
+        {
+          "source": "./jarocki.svg",
+          "specifiers": [
+            "JarockiMeLogo"
+          ]
+        },
+        {
+          "source": "./jojomobile.png",
+          "specifiers": [
+            "JojoMobileLogo"
+          ]
+        },
+        {
+          "source": "./monito.svg",
+          "specifiers": [
+            "MonitoLogo"
+          ]
+        },
+        {
+          "source": "./mv.png",
+          "specifiers": [
+            "MobileVikingsLogo"
+          ]
+        },
+        {
+          "source": "./nsn.svg",
+          "specifiers": [
+            "NSNLogo"
+          ]
+        },
+        {
+          "source": "./parabol.svg",
+          "specifiers": [
+            "ParabolLogo"
+          ]
+        },
+        {
+          "source": "./tastycloud.png",
+          "specifiers": [
+            "TastyCloudLogo"
+          ]
+        },
+        {
+          "source": "./yearprogress.svg",
+          "specifiers": [
+            "YearProgressLogo"
+          ]
+        },
+        {
+          "source": "./minimal.svg",
+          "specifiers": [
+            "Minimal"
+          ]
+        }
+      ],
+      "exports": [
+        "ConsultlyLogo",
+        "AmbitLogo",
+        "BarepapersLogo",
+        "BimLogo",
+        "CDGOLogo",
+        "ClevertechLogo",
+        "EvercastLogo",
+        "Howdy",
+        "JarockiMeLogo",
+        "JojoMobileLogo",
+        "MonitoLogo",
+        "MobileVikingsLogo",
+        "NSNLogo",
+        "ParabolLogo",
+        "TastyCloudLogo",
+        "YearProgressLogo",
+        "Minimal"
+      ],
+      "totalLines": 38,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/utils.ts": {
+      "filePath": "src/lib/utils.ts",
+      "contentHash": "27fda2e3bfb167bb7593f336b7da341cc48d7b554aa2c3cd3808963b5e32f924",
+      "functions": [
+        {
+          "name": "cn",
+          "params": [
+            "...inputs"
+          ],
+          "exported": true,
+          "lineCount": 3
+        },
+        {
+          "name": "calculateExperienceYears",
+          "params": [
+            "work"
+          ],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "clsx",
+          "specifiers": [
+            "ClassValue",
+            "clsx"
+          ]
+        },
+        {
+          "source": "tailwind-merge",
+          "specifiers": [
+            "twMerge"
+          ]
+        }
+      ],
+      "exports": [
+        "cn",
+        "calculateExperienceYears"
+      ],
+      "totalLines": 18,
+      "hasStructuralAnalysis": true
+    },
+    "tailwind.config.js": {
+      "filePath": "tailwind.config.js",
+      "contentHash": "0aa84af0c8a0b8384d5bed67867081d5bfcb6b39e058f61fce0507e9779dcfca",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 77,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "8cfaebdf4587043f881963a4b2b9b2e9d1dc3bccc3170634da36def2fa84903a",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 46,
+      "hasStructuralAnalysis": true
+    }
+  }
+}
